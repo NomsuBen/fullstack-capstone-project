@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { ObjectId } = require('mongodb'); // Import ObjectId to handle MongoDB IDs
-const connectToDatabase = require('./db'); // Ensure correct path to db.js
+const connectToDatabase = require('../models/db'); 
 
 // Get all gifts
 router.get('/', async (req, res) => {
